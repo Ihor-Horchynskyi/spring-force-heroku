@@ -12,8 +12,4 @@ public class StatusController {
         return "Test status";
     }
 
-    @RequestMapping("/error")
-    String getError() {
-        return "Errors suck(";
-    }
 }

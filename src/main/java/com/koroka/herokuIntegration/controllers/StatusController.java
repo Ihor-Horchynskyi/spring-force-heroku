@@ -9,7 +9,7 @@ public class StatusController {
 
     @RequestMapping("/status")
     String getStatus() {
-        return "Test status";
+        return "status";
     }
 
 }

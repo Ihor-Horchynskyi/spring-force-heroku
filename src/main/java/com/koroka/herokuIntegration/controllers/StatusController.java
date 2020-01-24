@@ -9,6 +9,11 @@ public class StatusController {
 
     @RequestMapping("/status")
     String getStatus() {
-        return "test status";
+        return "Test status";
+    }
+
+    @RequestMapping("/error")
+    String getError() {
+        return "Errors suck(";
     }
 }

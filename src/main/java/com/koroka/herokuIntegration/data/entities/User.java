@@ -4,14 +4,14 @@ import lombok.Data;
 
 import javax.persistence.*;
 
-//@Data
-//@Entity
+@Data
+@Entity
 public class User {
-   /* @Id
+    @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     public Long id;
     @Column
     public String name;
     @Column
-    public String surname;*/
+    public String surname;
 }

@@ -7,6 +7,13 @@
 <body>
 
 <table>
+    <thead>
+    <tr>
+        <th> SF Id</th>
+        <th> Vessel Name</th>
+        <th> Vessel capacity</th>
+    </tr>
+    </thead>
     <tbody>
     <tr th:each="vessel : ${vessels}">
         <td><span th:text="${vessel.salesforceId}"> SF Id </span></td>

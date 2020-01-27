@@ -12,7 +12,7 @@ public class VesselController {
     @Autowired
     VesselRepository vesselRepository;
 
-    @GetMapping("/status")
+    @GetMapping("/vessels/all")
     String showAll(Model model) {
         model.addAttribute("vessels", vesselRepository.findAll());
         return "pages/vessels";

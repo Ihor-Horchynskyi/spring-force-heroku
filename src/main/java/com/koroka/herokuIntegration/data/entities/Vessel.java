@@ -12,7 +12,7 @@ public class Vessel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    Id id;
+    Integer id;
 
     @Column(name = "createddate")
     Date createdDate;

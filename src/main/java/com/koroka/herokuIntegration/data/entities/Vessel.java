@@ -5,7 +5,8 @@ import lombok.Data;
 import javax.persistence.*;
 
 @Data
-@Entity(name = "vessel__c")
+@Table(name = "vessel__c", schema="salesforce")
+@Entity
 public class Vessel {
 
     @Id

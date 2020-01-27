@@ -3,6 +3,7 @@ package com.koroka.herokuIntegration.data.entities;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.sql.Date;
 
 @Data
 @Table(name = "vessel__c", schema="salesforce")
@@ -11,10 +12,10 @@ public class Vessel {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    String id;
+    Id id;
 
     @Column(name = "createddate")
-    String createdDate;
+    Date createdDate;
 
     @Column(name = "isdeleted")
     Boolean deleted;
@@ -23,10 +24,10 @@ public class Vessel {
     String name;
 
     @Column(name = "systemmodstamp")
-    String modifiedDate;
+    Date modifiedDate;
 
     @Column(name = "cargocapacity__c")
-    String cargoCapacity;
+    Double cargoCapacity;
 
     @Column(name = "vesselname__c")
     String vesselName;
